@@ -1,0 +1,22 @@
+{
+  "name": "pokemondbextractor",
+  "version": "1.0.0",
+  "description": "pokemonDb to mongoDb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnaudgregoire/pokemonDbExtractor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arnaudgregoire/pokemonDbExtractor/issues"
+  },
+  "homepage": "https://github.com/arnaudgregoire/pokemonDbExtractor#readme",
+  "dependencies": {
+    "pokedex-promise-v2": "^3.2.0"
+  }
+}
