@@ -1,5 +1,5 @@
 const Pokedex = require('pokedex-promise-v2');
-const PokemonModel =require('./pokemon-model');
+const GenericPokemonModel =require('./generic-pokemon-model');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
@@ -73,7 +73,7 @@ function createPokemon(name){
             delete moves.move.move_learn_method;
         })
 
-        PokemonModel.create(result).then((res) =>{
+        GenericPokemonModel.create(result).then((res) =>{
             console.log( name + ' created successfully');
         }).catch(function(error) {
         console.log('There was an ERROR: ', error);
