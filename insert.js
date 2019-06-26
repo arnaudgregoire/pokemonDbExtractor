@@ -56,6 +56,7 @@ function createPokemon(name){
         delete result['held_items'];
         delete result['species'];
         delete result['order'];
+        result.game_index = result.game_indices[0].game_index;
         delete result['game_indices'];
         result['moves'].forEach(moves => {
             moves.move.level_learned_at = moves.version_group_details[0].level_learned_at;
